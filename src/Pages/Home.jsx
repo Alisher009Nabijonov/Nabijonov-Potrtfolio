@@ -7,7 +7,7 @@ import CantactMe from "../components/CantactMe";
 import AboutMe from "../components/AboutMe";
 const Home = () => {
   return (
-    <div className="">
+    <div className='space-y-10 wrap'>
       <MyPortfolio />
       <AboutMe />
       <Skils />
