@@ -10,44 +10,157 @@
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 .inputGroup {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 1em 0 1em 0;
-    max-width: 190px;
-    position: relative;
+  font-family: "Segoe UI", sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+#responsive_nav {
+  display: none;
+}
+
+/* Bars */
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  left: -300px;
+  top: 0;
+  transition: all 0.5s;
+  color: black;
+  z-index: 99;
+}
+
+.open {
+  left: 0;
+}
+
+.close {
+  left: -300px;
+}
+.close-sidebar {
+  cursor: pointer;
+  font-size: 46px;
+  text-align: end;
+  padding: 0 20px;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  #fon {
+    flex-direction: column;
   }
-  
-  .inputGroup input {
-    font-size: 100%;
-    padding: 0.8em;
-    outline: none;
-    border: 2px solid rgb(200, 200, 200);
-    background-color: transparent;
-    border-radius: 20px;
+  #fon_left {
     width: 100%;
   }
-  
-  .inputGroup label {
-    font-size: 100%;
-    position: absolute;
-    left: 0;
-    padding: 0.8em;
-    margin-left: 0.5em;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    color: rgb(100, 100, 100);
+  #fon_right {
+    width: 100%;
   }
-  
-  .inputGroup :is(input:focus, input:valid)~label {
-    transform: translateY(-50%) scale(.9);
-    margin: 0em;
-    margin-left: 1.3em;
-    padding: 0.4em;
-    background-color: #e8e8e8;
+  #my_projects {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
   }
-  
-  .inputGroup :is(input:focus, input:valid) {
-    border-color: rgb(150, 150, 200);
+}
+@media (max-width: 750px) {
+  #skils {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
   }
+  #navbar {
+    display: none;
+  }
+  #responsive_nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #name_github {
+    display: none;
+  }
+  #aboutme_text_w{
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  #skils {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  #findme {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  #box_input {
+    width: 100%;
+  }
+  #fon_left h1{
+    width: 100%;
+  }
+  #footer_main{
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px){
+  #my_projects_main{
+    width: 90%;
+    margin: 0 auto;
+  }
+  #my_projects_main a{
+    font-size: 13px;
+  }
+  #skils{
+    gap: 20px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  #project_link{
+    gap: 1px;
+  }
+  .sidebar{
+    width: 240px;
+  }
+}

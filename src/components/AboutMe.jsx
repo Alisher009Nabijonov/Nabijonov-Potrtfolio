@@ -13,7 +13,7 @@ const AboutMe = () => {
           I'm interested in Creating new Social Media websites and everything
           connected with it.
         </h1>
-        <h1 className="text-[#000000] text-[17px] mb-4 w-[40%] text-center mx-auto">
+        <h1 id="aboutme_text_w" className="text-[#000000] text-[17px] mb-4 w-[40%] text-center mx-auto">
           I'm Ready to implement excellent projects with wonderful people.
         </h1>
         <h1 className="text-black font-bold text-2xl mb-4">Edication</h1>

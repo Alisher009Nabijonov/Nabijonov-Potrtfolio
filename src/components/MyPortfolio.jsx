@@ -5,14 +5,18 @@ import { FiGithub } from "react-icons/fi";
 
 
 const MyPortfolio = () => {
+
+  const Data = new Date();
+  const nowYear = Data.getFullYear();
+  const MyBirhtDay = nowYear - 2009;
   return (
     <div  className="sm:w-[970px] max-w-[90%] mx-auto my-4">
-      <div className="flex items-center justify-between">
+      <div id="name_github" className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl text-black font-black my-1">
             Nabijonov Alisher
           </h1>
-          <h2 className="text-gray-600">Frontend developer, 16 year old.</h2>
+          <h2 className="text-gray-600">Frontend developer, {MyBirhtDay} year old.</h2>
         </div>
         <div>
           <a href="https://github.com/Alisher009Nabijonov" target="_blank">
@@ -23,11 +27,11 @@ const MyPortfolio = () => {
         </div>
       </div>
       <div id="fon" className="w-full py-6 my-4 px-6 text-white rounded flex items-center justify-between">
-        <div className="w-[60%]">
+        <div id="fon_left" className="w-[60%]">
           <h1 className="py-2 font-bold text-4xl w-[80%] mb-1">Dream big, because they will take you one step further.</h1>
           <h2>-Nabijonov Alisher</h2>
         </div>
-        <div className="w-[40%] ">
+        <div id="fon_right" className="w-[40%] ">
           <img src={FonImg} alt="myimg" className="w-60 h-60 rounded-full  mx-auto" />
         </div>
       </div>

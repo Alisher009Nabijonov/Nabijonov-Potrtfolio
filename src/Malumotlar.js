@@ -65,7 +65,7 @@ export const skills = [
 // Projects
 
 import Yevro from "./assets/Projectyevro.jpg";
-import Instagram from "./assets/Projectyevro.jpg";
+import Instagram from "./assets/projectinstagram.jpg"
 import Hekto from "./assets/Projecthekto.jpg";
 import Tastebite from "./assets/Projecttastebite.jpg";
 import { Link } from "react-router-dom";

@@ -11,7 +11,7 @@ const SocialConnections = () => {
         <div>
           <h1 className="text-xl font-bold text-center">social connections</h1>
         </div>
-        <div className="flex gap-4 text-center my-5">
+        <div id="findme" className="flex gap-4 text-center my-5">
           <div className="w-[100%] text-6xl bg-black text-white rounded hover:bg-white hover:border hover:text-black cursor-pointer flex items-center justify-center h-30">
             <a href="https://t.me/Nabijonov009" target="_blank"><FaTelegramPlane /></a>
           </div>
