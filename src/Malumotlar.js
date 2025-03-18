@@ -64,10 +64,10 @@ export const skills = [
 
 // Projects
 
-import Instagram from "./assets/projectinstagram.jpg"
-import Hekto from "./assets/Projecthekto.jpg";
-import Tastebite from "./assets/Projecttastebite.jpg";
-import Yevro from "./assets/Projectyevro.jpg";
+import Instagram from "./assets/projectinstagram.png"
+import Hekto from "./assets/Projecthekto.png";
+import Tastebite from "./assets/Projecttastebite.png";
+import Yevro from "./assets/Projectyevro.png";
 import { Link } from "react-router-dom";
 
 export const Projects = [
