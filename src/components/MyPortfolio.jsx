@@ -10,7 +10,7 @@ const MyPortfolio = () => {
   const nowYear = Data.getFullYear();
   const MyBirhtDay = nowYear - 2009;
   return (
-    <div  className="sm:w-[970px] max-w-[90%] mx-auto my-4">
+    <div id="nav"  className="sm:w-[970px] max-w-[90%] mx-auto my-4">
       <div id="name_github" className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl text-black font-black my-1">

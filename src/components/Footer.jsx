@@ -7,10 +7,10 @@ const Footer = () => {
         <div id='footer_main' className='flex items-start justify-between py-6'>
           <div>
             <h1 className='text-black text-2xl font-bold'>Links</h1>
-            <a href="#aboutme"><h2 className='text-gray-700 my-1'>About me</h2></a>
-            <a href="#skills"><h2 className='text-gray-700 my-1'>Skills</h2></a>
-            <a href="#projecs"><h2 className='text-gray-700 my-1'>Projects</h2></a>
-            <a href="#cantact"><h2 className='text-gray-700 my-1'>Contacts</h2></a>
+            <a href="#aboutme"><h2 id='hover_text' className='text-gray-700 my-1'>About me</h2></a>
+            <a href="#skills"><h2 id='hover_text' className='text-gray-700 my-1'>Skills</h2></a>
+            <a href="#projecs"><h2 id='hover_text' className='text-gray-700 my-1'>Projects</h2></a>
+            <a href="#cantact"><h2 id='hover_text' className='text-gray-700 my-1'>Contacts</h2></a>
           </div>
           <div>
             <h1 className='text-black text-2xl font-bold'>Contacts</h1>

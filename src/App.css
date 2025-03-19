@@ -84,6 +84,34 @@ html {
   color: black;
 }
 
+
+
+/* hover text */
+
+#hover_text  {
+  width: 100%;
+  position: relative;
+  font-size: 18px;
+  /* color: #fff; */
+  cursor: pointer;
+}
+
+#hover_text::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: gray;
+  transition: all 0.3s ease-in-out;
+}
+
+#hover_text:hover::after {
+  right: 0;
+  width: 100%;
+}
+
 @media (max-width: 800px) {
   #fon {
     flex-direction: column;
